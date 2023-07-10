@@ -1,4 +1,4 @@
-package kg.kench.lovecalculator
+package kg.kench.lovecalculator.remote
 
 import retrofit2.Call
 import retrofit2.http.GET

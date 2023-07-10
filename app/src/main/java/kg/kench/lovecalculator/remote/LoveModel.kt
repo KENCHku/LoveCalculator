@@ -1,4 +1,4 @@
-package kg.kench.lovecalculator
+package kg.kench.lovecalculator.remote
 
 import com.google.gson.annotations.SerializedName
 

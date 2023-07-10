@@ -1,4 +1,4 @@
-package kg.kench.lovecalculator
+package kg.kench.lovecalculator.remote
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

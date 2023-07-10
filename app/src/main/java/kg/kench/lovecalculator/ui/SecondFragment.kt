@@ -1,4 +1,4 @@
-package kg.kench.lovecalculator
+package kg.kench.lovecalculator.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kg.kench.lovecalculator.databinding.FragmentSecondBinding
+import kg.kench.lovecalculator.remote.LoveModel
+import kg.kench.lovecalculator.ui.FirstFragment
 
 class SecondFragment : Fragment() {
 

@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="kg.kench.lovecalculator.FirstFragment"
+        android:name="kg.kench.lovecalculator.ui.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" />
     <fragment
         android:id="@+id/secondFragment"
-        android:name="kg.kench.lovecalculator.SecondFragment"
+        android:name="kg.kench.lovecalculator.ui.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" />
 </navigation>

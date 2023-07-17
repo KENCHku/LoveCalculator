@@ -2,15 +2,19 @@ package kg.kench.lovecalculator
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import kg.kench.lovecalculator.remote.LoveModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kg.kench.lovecalculator.model.LoveModel
+import kg.kench.lovecalculator.repository.Repository
+import javax.inject.Inject
 
-class LoveViewModel: ViewModel() {
+@HiltViewModel
+class LoveViewModel @Inject constructor(private val repository: Repository): ViewModel() {
 
-    val repository = Repository()
-
-    fun getLiveData(firstName: String, secondName: String): LiveData<LoveModel>{
-
-
+    fun getLiveData(firstName: String, secondName: String): LiveData<LoveModel> {
         return repository.getData(firstName, secondName)
     }
+    fun insert (loveModel: LoveModel){
+        repository.insert(loveModel)
+    }
+
 }
